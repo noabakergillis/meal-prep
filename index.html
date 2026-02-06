@@ -43,6 +43,7 @@
         }
         .status.pending { background: #fff3cd; color: #856404; }
         .status.approved { background: #d4edda; color: #155724; }
+        .status.live { background: #cce5ff; color: #004085; }
         .menu-item {
             display: flex;
             justify-content: space-between;
@@ -50,6 +51,7 @@
             border-bottom: 1px solid #eee;
         }
         .menu-item:last-child { border-bottom: none; }
+        .menu-item.today { background: #e8f5e9; margin: 0 -20px; padding: 12px 20px; }
         .day { font-weight: 600; color: #555; }
         .meal { color: #333; }
         .grocery-item {
@@ -78,6 +80,14 @@
             font-size: 0.85em;
             margin-top: 20px;
         }
+        .tip {
+            background: #fff3cd;
+            border-radius: 8px;
+            padding: 10px 12px;
+            font-size: 0.85em;
+            color: #856404;
+            margin-top: 12px;
+        }
     </style>
 </head>
 <body>
@@ -85,60 +95,67 @@
         <h1>🍽️ Gillis Family Meals</h1>
         
         <div class="card">
-            <h2>📅 Upcoming (Next 10 Days)</h2>
-            <p class="empty">Waiting for calendar access — run `gog auth login` with amisamigillis@gmail.com</p>
-            <!--
-            <div class="menu-item"><span class="day">Feb 8</span><span class="meal">Ami's checkup @ 10am</span></div>
-            -->
+            <h2>📅 Upcoming <span class="status live">Live from Calendar</span></h2>
+            <div class="menu-item today"><span class="day">Today (Feb 6)</span><span class="meal">Veena 1pm - 6pm</span></div>
+            <div class="menu-item"><span class="day">Sun 2/9</span><span class="meal">Veena 10am - 6pm</span></div>
+            <div class="menu-item"><span class="day">Mon 2/10</span><span class="meal">Veena 9:30am - 6:30pm</span></div>
+            <div class="menu-item"><span class="day">Tue 2/11</span><span class="meal">Veena 9:30am - 6:30pm</span></div>
+            <div class="menu-item"><span class="day">Wed 2/12</span><span class="meal">Veena 9:30am - 6:30pm</span></div>
+            <div class="menu-item"><span class="day">Thu 2/13</span><span class="meal">Veena 1pm - 6pm</span></div>
         </div>
 
         <div class="card">
             <h2>👶 Nanny Schedule (Veena)</h2>
-            <p class="empty">Tell me the schedule each Friday and I'll update here + sync to calendar</p>
-            <!--
-            <div class="menu-item"><span class="day">Mon 2/10</span><span class="meal">9am - 5pm</span></div>
-            <div class="menu-item"><span class="day">Tue 2/11</span><span class="meal">9am - 5pm</span></div>
-            -->
+            <div class="menu-item"><span class="day">Thursdays</span><span class="meal">1pm - 6pm</span></div>
+            <div class="menu-item"><span class="day">Sundays</span><span class="meal">10am - 6pm</span></div>
+            <div class="menu-item"><span class="day">Mon-Wed</span><span class="meal">9:30am - 6:30pm</span></div>
+            <p class="tip">💡 Schedule synced from Google Calendar (amisamigillis@gmail.com)</p>
         </div>
 
         <div class="card">
-            <h2>🍽️ This Week's Menu <span class="status pending">Awaiting First Menu</span></h2>
-            <p class="empty">Menu will appear here every Wednesday at 9am</p>
-            <!--
-            <div class="menu-item"><span class="day">Monday</span><span class="meal">Lentil Soup</span></div>
-            <div class="menu-item"><span class="day">Tuesday</span><span class="meal">Tofu Stir Fry</span></div>
-            -->
+            <h2>🍽️ This Week's Menu <span class="status pending">Awaiting Menu</span></h2>
+            <p class="empty">Menu will be posted each Thursday at 9am for approval</p>
+            <p class="tip">💡 Tell Fammy or Terry what meals you'd like this week!</p>
         </div>
 
         <div class="card">
             <h2>🛒 Grocery List</h2>
             <p style="font-size:0.85em;color:#666;margin-bottom:12px;">📍 This week (Feb 7 delivery)</p>
-            <div class="grocery-item"><input type="checkbox"><span>Active dry yeast (jar)</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Bread flour</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Neutral oil (sunflower or avocado — whichever's cheaper)</span></div>
-            <p style="font-size:0.8em;color:#888;margin-top:8px;">🥖 For challah</p>
+            <div class="grocery-item"><input type="checkbox"><span>Active dry yeast (jar) — for challah</span></div>
+            <div class="grocery-item"><input type="checkbox"><span>Bread flour — for challah</span></div>
+            <div class="grocery-item"><input type="checkbox"><span>Neutral oil (sunflower or avocado, whichever cheaper)</span></div>
             <div class="grocery-item"><input type="checkbox"><span>Cling wrap</span></div>
         </div>
 
         <div class="card">
-            <h2>💰 Price Comparison</h2>
-            <p class="empty">Price comparison will appear with each weekly grocery list</p>
-            <!--
+            <h2>💰 Budget Tips</h2>
             <table style="width:100%;font-size:0.9em;border-collapse:collapse;">
                 <tr style="border-bottom:1px solid #eee;">
-                    <th style="text-align:left;padding:8px 0;">Item</th>
-                    <th style="text-align:right;padding:8px 0;">ALDI</th>
-                    <th style="text-align:right;padding:8px 0;">Instacart</th>
-                    <th style="text-align:right;padding:8px 0;">Best</th>
+                    <th style="text-align:left;padding:8px 0;">Store</th>
+                    <th style="text-align:left;padding:8px 0;">Best For</th>
                 </tr>
                 <tr style="border-bottom:1px solid #eee;">
-                    <td style="padding:8px 0;">Bread flour</td>
-                    <td style="text-align:right;">$3.49</td>
-                    <td style="text-align:right;">$5.99</td>
-                    <td style="text-align:right;color:#2e7d32;">ALDI ✓</td>
+                    <td style="padding:8px 0;">🅰️ ALDI</td>
+                    <td>Budget staples, basics</td>
+                </tr>
+                <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:8px 0;">🌻 Trader Joe's</td>
+                    <td>Produce, frozen, unique items</td>
+                </tr>
+                <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:8px 0;">🥩 Brooklyn Harvest</td>
+                    <td>Butcher (custom cuts!)</td>
+                </tr>
+                <tr style="border-bottom:1px solid #eee;">
+                    <td style="padding:8px 0;">📦 Costco</td>
+                    <td>Bulk, paper goods, olive oil</td>
+                </tr>
+                <tr>
+                    <td style="padding:8px 0;">💵 99¢ Store</td>
+                    <td>Paper goods (Graham Ave)</td>
                 </tr>
             </table>
-            -->
+            <p class="tip">🚫 Skip corner stores — huge markups!</p>
         </div>
 
         <div class="card">
@@ -147,7 +164,15 @@
             <span class="pantry-item">🥜 Ami puffs (stocked)</span>
         </div>
 
-        <p class="updated">Updated: Feb 6, 2026 • Fammy 👨‍👩‍👧‍👦</p>
+        <div class="card">
+            <h2>👨‍👩‍👧‍👦 Family</h2>
+            <div class="menu-item"><span class="day">Gedalia</span><span class="meal">🦜 Fammy</span></div>
+            <div class="menu-item"><span class="day">Noa</span><span class="meal">🤖 Terry</span></div>
+            <div class="menu-item"><span class="day">Ami</span><span class="meal">1 year old 👶</span></div>
+            <p style="font-size:0.8em;color:#666;margin-top:12px;">📍 139 N 10th St, 4B • Williamsburg</p>
+        </div>
+
+        <p class="updated">Updated: Feb 6, 2026 • Fammy 👨‍👩‍👧‍👦 + Terry 🤖</p>
     </div>
 </body>
 </html>
