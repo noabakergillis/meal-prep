@@ -44,8 +44,36 @@
         .status.pending { background: #fff3cd; color: #856404; }
         .status.approved { background: #d4edda; color: #155724; }
         .status.live { background: #cce5ff; color: #004085; }
+        
+        /* Hours tally */
+        .hours-tally {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 16px;
+        }
+        .tally-box {
+            flex: 1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 12px;
+            padding: 16px;
+            text-align: center;
+            color: white;
+        }
+        .tally-box.secondary {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+        .tally-number {
+            font-size: 2em;
+            font-weight: 700;
+        }
+        .tally-label {
+            font-size: 0.75em;
+            opacity: 0.9;
+            margin-top: 4px;
+        }
+        
         .scroll-list {
-            max-height: 250px;
+            max-height: 200px;
             overflow-y: auto;
             border: 1px solid #eee;
             border-radius: 8px;
@@ -60,9 +88,19 @@
         .menu-item:last-child { border-bottom: none; }
         .menu-item.today { background: #e8f5e9; margin: 0 -12px; padding: 12px; border-radius: 6px; }
         .menu-item.no-veena { opacity: 0.5; }
+        .menu-item.done { opacity: 0.6; }
+        .menu-item.done .meal { text-decoration: line-through; }
         .day { font-weight: 600; color: #555; min-width: 100px; }
         .meal { color: #333; text-align: right; }
         .meal.off { color: #999; font-style: italic; }
+        .hours { 
+            font-size: 0.75em; 
+            background: #e8f5e9; 
+            color: #2e7d32; 
+            padding: 2px 6px; 
+            border-radius: 4px;
+            margin-left: 8px;
+        }
         .grocery-item {
             display: flex;
             align-items: center;
@@ -104,18 +142,34 @@
         <h1>🍽️ Gillis Family Meals</h1>
         
         <div class="card">
-            <h2>👶 Nanny Schedule (Veena) <span class="status live">Next 10 Days</span></h2>
+            <h2>👶 Veena Hours</h2>
+            <div class="hours-tally">
+                <div class="tally-box">
+                    <div class="tally-number">40</div>
+                    <div class="tally-label">Next Week<br>(Feb 9-15)</div>
+                </div>
+                <div class="tally-box secondary">
+                    <div class="tally-number">40</div>
+                    <div class="tally-label">This Month<br>(Feb 1-6)</div>
+                </div>
+            </div>
+            
+            <h2 style="margin-top:8px;">📅 Schedule <span class="status live">Next 10 Days</span></h2>
             <div class="scroll-list">
-                <div class="menu-item today"><span class="day">Thu 2/6</span><span class="meal">1:00 PM - 6:00 PM</span></div>
-                <div class="menu-item no-veena"><span class="day">Fri 2/7</span><span class="meal off">— No Veena —</span></div>
-                <div class="menu-item no-veena"><span class="day">Sat 2/8</span><span class="meal off">— No Veena —</span></div>
-                <div class="menu-item"><span class="day">Sun 2/9</span><span class="meal">10:00 AM - 6:00 PM</span></div>
-                <div class="menu-item"><span class="day">Mon 2/10</span><span class="meal">9:30 AM - 6:30 PM</span></div>
-                <div class="menu-item"><span class="day">Tue 2/11</span><span class="meal">9:30 AM - 6:30 PM</span></div>
-                <div class="menu-item"><span class="day">Wed 2/12</span><span class="meal">9:30 AM - 6:30 PM</span></div>
-                <div class="menu-item"><span class="day">Thu 2/13</span><span class="meal">1:00 PM - 6:00 PM</span></div>
-                <div class="menu-item no-veena"><span class="day">Fri 2/14</span><span class="meal off">— No Veena —</span></div>
-                <div class="menu-item no-veena"><span class="day">Sat 2/15</span><span class="meal off">— No Veena —</span></div>
+                <div class="menu-item done"><span class="day">Sun 2/2</span><span class="meal">10am - 6pm <span class="hours">8h</span></span></div>
+                <div class="menu-item done"><span class="day">Mon 2/3</span><span class="meal">9:30am - 6:30pm <span class="hours">9h</span></span></div>
+                <div class="menu-item done"><span class="day">Tue 2/4</span><span class="meal">9:30am - 6:30pm <span class="hours">9h</span></span></div>
+                <div class="menu-item done"><span class="day">Wed 2/5</span><span class="meal">9:30am - 6:30pm <span class="hours">9h</span></span></div>
+                <div class="menu-item today"><span class="day">Thu 2/6 ✨</span><span class="meal">1pm - 6pm <span class="hours">5h</span></span></div>
+                <div class="menu-item no-veena"><span class="day">Fri 2/7</span><span class="meal off">— Off —</span></div>
+                <div class="menu-item no-veena"><span class="day">Sat 2/8</span><span class="meal off">— Off —</span></div>
+                <div class="menu-item"><span class="day">Sun 2/9</span><span class="meal">10am - 6pm <span class="hours">8h</span></span></div>
+                <div class="menu-item"><span class="day">Mon 2/10</span><span class="meal">9:30am - 6:30pm <span class="hours">9h</span></span></div>
+                <div class="menu-item"><span class="day">Tue 2/11</span><span class="meal">9:30am - 6:30pm <span class="hours">9h</span></span></div>
+                <div class="menu-item"><span class="day">Wed 2/12</span><span class="meal">9:30am - 6:30pm <span class="hours">9h</span></span></div>
+                <div class="menu-item"><span class="day">Thu 2/13</span><span class="meal">1pm - 6pm <span class="hours">5h</span></span></div>
+                <div class="menu-item no-veena"><span class="day">Fri 2/14</span><span class="meal off">— Off —</span></div>
+                <div class="menu-item no-veena"><span class="day">Sat 2/15</span><span class="meal off">— Off —</span></div>
             </div>
             <p class="tip">📅 Synced from Google Calendar • Updated Feb 6</p>
         </div>
