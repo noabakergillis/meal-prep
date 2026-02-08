@@ -1,27 +1,35 @@
 {
   "lastUpdated": "2026-02-08",
+  "deliveryDate": "Feb 7 delivery",
   "stores": {
     "any": [
       {
-        "item": "Red peppers",
+        "item": "Active dry yeast (jar)",
         "quantity": "",
-        "category": "Produce",
+        "category": "Baking",
+        "notes": "for challah"
+      },
+      {
+        "item": "Bread flour",
+        "quantity": "",
+        "category": "Baking",
+        "notes": "for challah"
+      },
+      {
+        "item": "Neutral oil",
+        "quantity": "",
+        "category": "Pantry",
+        "notes": "sunflower or avocado, whichever cheaper"
+      },
+      {
+        "item": "Cling wrap",
+        "quantity": "",
+        "category": "Household",
         "notes": ""
       }
     ],
     "freshDirectOnly": [],
     "instacartOnly": [],
     "costcoOnly": []
-  },
-  "categories": {
-    "produce": [],
-    "dairy": [],
-    "meat": [],
-    "pantry": [],
-    "frozen": [],
-    "bakery": [],
-    "snacks": [],
-    "beverages": [],
-    "household": []
   }
 }
