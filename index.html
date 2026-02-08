@@ -48,14 +48,14 @@
         /* Hours tally */
         .hours-tally {
             display: flex;
-            gap: 12px;
+            gap: 8px;
             margin-bottom: 16px;
         }
         .tally-box {
             flex: 1;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 12px;
-            padding: 16px;
+            padding: 12px 8px;
             text-align: center;
             color: white;
         }
@@ -63,17 +63,18 @@
             background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
         }
         .tally-number {
-            font-size: 2.5em;
+            font-size: 2em;
             font-weight: 700;
         }
         .tally-unit {
-            font-size: 0.9em;
+            font-size: 0.8em;
             opacity: 0.9;
         }
         .tally-label {
-            font-size: 0.75em;
+            font-size: 0.7em;
             opacity: 0.8;
             margin-top: 4px;
+            line-height: 1.3;
         }
         
         .scroll-list {
@@ -175,12 +176,16 @@
             <h2>⏱️ Veena Hours</h2>
             <div class="hours-tally">
                 <div class="tally-box">
-                    <div class="tally-number">41<span class="tally-unit">h</span></div>
-                    <div class="tally-label">This Week<br><span style="font-size:0.85em;">(Feb 2-8)</span></div>
+                    <div class="tally-number">40.5<span class="tally-unit">h</span></div>
+                    <div class="tally-label">This Week<br><span style="font-size:0.85em;">(Feb 9-15)</span></div>
+                </div>
+                <div class="tally-box">
+                    <div class="tally-number">35.5<span class="tally-unit">h</span></div>
+                    <div class="tally-label">Next Week<br><span style="font-size:0.85em;">(Feb 16-22)</span></div>
                 </div>
                 <div class="tally-box green">
-                    <div class="tally-number">80<span class="tally-unit">h</span></div>
-                    <div class="tally-label">February<br><span style="font-size:0.85em;">(scheduled)</span></div>
+                    <div class="tally-number">160<span class="tally-unit">h</span></div>
+                    <div class="tally-label">4 Week Total<br><span style="font-size:0.85em;">(Feb 9-Mar 8)</span></div>
                 </div>
             </div>
         </div>
