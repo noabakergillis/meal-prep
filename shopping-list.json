@@ -1,0 +1,27 @@
+{
+  "lastUpdated": "2026-02-08",
+  "stores": {
+    "any": [
+      {
+        "item": "Red peppers",
+        "quantity": "",
+        "category": "Produce",
+        "notes": ""
+      }
+    ],
+    "freshDirectOnly": [],
+    "instacartOnly": [],
+    "costcoOnly": []
+  },
+  "categories": {
+    "produce": [],
+    "dairy": [],
+    "meat": [],
+    "pantry": [],
+    "frozen": [],
+    "bakery": [],
+    "snacks": [],
+    "beverages": [],
+    "household": []
+  }
+}
