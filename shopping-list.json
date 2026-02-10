@@ -1,31 +1,199 @@
 {
-  "lastUpdated": "2026-02-08",
-  "deliveryDate": "Feb 7 delivery",
+  "lastUpdated": "2026-02-10",
+  "deliveryDate": "Week of Feb 10",
   "stores": {
     "any": [
       {
-        "item": "Active dry yeast (jar)",
-        "quantity": "",
-        "category": "Baking",
-        "notes": "for challah"
+        "item": "White onion",
+        "quantity": "1",
+        "category": "Produce",
+        "notes": "stir-fry"
       },
       {
-        "item": "Bread flour",
-        "quantity": "",
-        "category": "Baking",
-        "notes": "for challah"
+        "item": "Yellow onions",
+        "quantity": "3",
+        "category": "Produce",
+        "notes": "lentil soup, chili, salads"
       },
       {
-        "item": "Neutral oil",
-        "quantity": "",
+        "item": "Red onion",
+        "quantity": "1",
+        "category": "Produce",
+        "notes": "salmon salad"
+      },
+      {
+        "item": "Carrots",
+        "quantity": "3",
+        "category": "Produce",
+        "notes": "lentil soup"
+      },
+      {
+        "item": "Celery stalks",
+        "quantity": "3",
+        "category": "Produce",
+        "notes": "lentil soup"
+      },
+      {
+        "item": "Bell peppers",
+        "quantity": "2",
+        "category": "Produce",
+        "notes": "stir-fry, chili"
+      },
+      {
+        "item": "Broccoli",
+        "quantity": "1 head",
+        "category": "Produce",
+        "notes": "stir-fry"
+      },
+      {
+        "item": "Snap peas",
+        "quantity": "1 bag",
+        "category": "Produce",
+        "notes": "stir-fry"
+      },
+      {
+        "item": "Large eggplants",
+        "quantity": "2",
+        "category": "Produce",
+        "notes": "sabich"
+      },
+      {
+        "item": "Small potatoes",
+        "quantity": "1 lb",
+        "category": "Produce",
+        "notes": "sabich"
+      },
+      {
+        "item": "Cherry tomatoes",
+        "quantity": "1 pint",
+        "category": "Produce",
+        "notes": "salmon salad"
+      },
+      {
+        "item": "Regular tomatoes",
+        "quantity": "3-4",
+        "category": "Produce",
+        "notes": "Israeli salad, chili"
+      },
+      {
+        "item": "Cucumbers",
+        "quantity": "3-4",
+        "category": "Produce",
+        "notes": "salads"
+      },
+      {
+        "item": "Romaine lettuce",
+        "quantity": "1 head",
+        "category": "Produce",
+        "notes": "salmon salad"
+      },
+      {
+        "item": "Arugula",
+        "quantity": "1 bag",
+        "category": "Produce",
+        "notes": "salmon salad"
+      },
+      {
+        "item": "Garlic",
+        "quantity": "1 head",
+        "category": "Produce",
+        "notes": "stir-fry, various"
+      },
+      {
+        "item": "Lemons",
+        "quantity": "2-3",
+        "category": "Produce",
+        "notes": "salad dressing"
+      },
+      {
+        "item": "Firm tofu",
+        "quantity": "1 block",
+        "category": "Protein",
+        "notes": "stir-fry"
+      },
+      {
+        "item": "Salmon fillet",
+        "quantity": "1.5 lbs",
+        "category": "Protein",
+        "notes": "roasted salmon"
+      },
+      {
+        "item": "Eggs",
+        "quantity": "1 dozen",
+        "category": "Protein",
+        "notes": "sabich"
+      },
+      {
+        "item": "Red lentils",
+        "quantity": "1.5 cups (or 1 bag)",
         "category": "Pantry",
-        "notes": "sunflower or avocado, whichever cheaper"
+        "notes": "lentil soup"
       },
       {
-        "item": "Cling wrap",
-        "quantity": "",
-        "category": "Household",
-        "notes": ""
+        "item": "Black beans",
+        "quantity": "2 cans",
+        "category": "Pantry",
+        "notes": "chili"
+      },
+      {
+        "item": "Kidney beans",
+        "quantity": "2 cans",
+        "category": "Pantry",
+        "notes": "chili"
+      },
+      {
+        "item": "Crushed tomatoes",
+        "quantity": "1 can",
+        "category": "Pantry",
+        "notes": "chili"
+      },
+      {
+        "item": "Diced tomatoes",
+        "quantity": "1 can",
+        "category": "Pantry",
+        "notes": "chili"
+      },
+      {
+        "item": "Tomato paste",
+        "quantity": "1 small can",
+        "category": "Pantry",
+        "notes": "lentil soup"
+      },
+      {
+        "item": "Vegetable broth",
+        "quantity": "4 cups (or 1 box)",
+        "category": "Pantry",
+        "notes": "lentil soup"
+      },
+      {
+        "item": "Tahini",
+        "quantity": "1 jar",
+        "category": "Pantry",
+        "notes": "sabich, salmon salad"
+      },
+      {
+        "item": "Feta cheese",
+        "quantity": "1 container",
+        "category": "Dairy",
+        "notes": "salmon salad"
+      },
+      {
+        "item": "Nuts or seeds for salad",
+        "quantity": "1 bag",
+        "category": "Pantry",
+        "notes": "salmon salad - toasted walnuts or sunflower seeds"
+      },
+      {
+        "item": "Bread",
+        "quantity": "1 loaf",
+        "category": "Bakery",
+        "notes": "lentil soup"
+      },
+      {
+        "item": "Dijon mustard",
+        "quantity": "1 jar",
+        "category": "Pantry",
+        "notes": "salad dressing"
       }
     ],
     "freshDirectOnly": [],
