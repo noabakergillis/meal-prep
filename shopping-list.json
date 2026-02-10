@@ -4,6 +4,30 @@
   "stores": {
     "any": [
       {
+        "item": "Active dry yeast (jar)",
+        "quantity": "",
+        "category": "Baking",
+        "notes": "for challah"
+      },
+      {
+        "item": "Bread flour",
+        "quantity": "",
+        "category": "Baking",
+        "notes": "for challah"
+      },
+      {
+        "item": "Neutral oil",
+        "quantity": "",
+        "category": "Pantry",
+        "notes": "sunflower or avocado, whichever cheaper"
+      },
+      {
+        "item": "Cling wrap",
+        "quantity": "",
+        "category": "Household",
+        "notes": ""
+      },
+      {
         "item": "White onion",
         "quantity": "1",
         "category": "Produce",
