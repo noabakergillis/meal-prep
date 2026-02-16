@@ -1,223 +1,127 @@
 {
-  "lastUpdated": "2026-02-10",
-  "deliveryDate": "Week of Feb 10",
+  "lastUpdated": "2026-02-16",
+  "deliveryDate": "Week of Feb 17 (Tue-Thu)",
   "stores": {
     "any": [
       {
-        "item": "Active dry yeast (jar)",
-        "quantity": "",
-        "category": "Baking",
-        "notes": "for challah"
-      },
-      {
-        "item": "Bread flour",
-        "quantity": "",
-        "category": "Baking",
-        "notes": "for challah"
-      },
-      {
-        "item": "Neutral oil",
-        "quantity": "",
+        "item": "Red lentils",
+        "quantity": "1 lb bag",
         "category": "Pantry",
-        "notes": "sunflower or avocado, whichever cheaper"
-      },
-      {
-        "item": "Cling wrap",
-        "quantity": "",
-        "category": "Household",
-        "notes": ""
-      },
-      {
-        "item": "White onion",
-        "quantity": "1",
-        "category": "Produce",
-        "notes": "stir-fry"
+        "notes": "Lentil soup (Tue)"
       },
       {
         "item": "Yellow onions",
         "quantity": "3",
         "category": "Produce",
-        "notes": "lentil soup, chili, salads"
-      },
-      {
-        "item": "Red onion",
-        "quantity": "1",
-        "category": "Produce",
-        "notes": "salmon salad"
+        "notes": "Lentil soup, stir-fry, general"
       },
       {
         "item": "Carrots",
-        "quantity": "3",
+        "quantity": "1 lb bag",
         "category": "Produce",
-        "notes": "lentil soup"
+        "notes": "Lentil soup"
       },
       {
-        "item": "Celery stalks",
-        "quantity": "3",
+        "item": "Celery",
+        "quantity": "1 bunch",
         "category": "Produce",
-        "notes": "lentil soup"
-      },
-      {
-        "item": "Bell peppers",
-        "quantity": "2",
-        "category": "Produce",
-        "notes": "stir-fry, chili"
-      },
-      {
-        "item": "Broccoli",
-        "quantity": "1 head",
-        "category": "Produce",
-        "notes": "stir-fry"
-      },
-      {
-        "item": "Snap peas",
-        "quantity": "1 bag",
-        "category": "Produce",
-        "notes": "stir-fry"
-      },
-      {
-        "item": "Large eggplants",
-        "quantity": "2",
-        "category": "Produce",
-        "notes": "sabich"
-      },
-      {
-        "item": "Small potatoes",
-        "quantity": "1 lb",
-        "category": "Produce",
-        "notes": "sabich"
+        "notes": "Lentil soup"
       },
       {
         "item": "Cherry tomatoes",
         "quantity": "1 pint",
         "category": "Produce",
-        "notes": "salmon salad"
+        "notes": "Salmon salad (Wed)"
       },
       {
-        "item": "Regular tomatoes",
-        "quantity": "3-4",
+        "item": "Cucumber",
+        "quantity": "2",
         "category": "Produce",
-        "notes": "Israeli salad, chili"
+        "notes": "Salmon salad"
       },
       {
-        "item": "Cucumbers",
-        "quantity": "3-4",
+        "item": "Mixed greens / Spring mix",
+        "quantity": "5 oz container",
         "category": "Produce",
-        "notes": "salads"
+        "notes": "Salmon salad"
       },
       {
-        "item": "Romaine lettuce",
-        "quantity": "1 head",
+        "item": "Bell peppers",
+        "quantity": "2 (red/yellow)",
         "category": "Produce",
-        "notes": "salmon salad"
+        "notes": "Tofu stir-fry (Thu)"
       },
       {
-        "item": "Arugula",
-        "quantity": "1 bag",
+        "item": "Snap peas",
+        "quantity": "8 oz bag",
         "category": "Produce",
-        "notes": "salmon salad"
+        "notes": "Tofu stir-fry"
       },
       {
-        "item": "Garlic",
-        "quantity": "1 head",
+        "item": "Lemon",
+        "quantity": "2",
         "category": "Produce",
-        "notes": "stir-fry, various"
+        "notes": "Salmon salad dressing"
       },
       {
-        "item": "Lemons",
-        "quantity": "2-3",
+        "item": "Fresh ginger",
+        "quantity": "1 small piece",
         "category": "Produce",
-        "notes": "salad dressing"
-      },
-      {
-        "item": "Firm tofu",
-        "quantity": "1 block",
-        "category": "Protein",
-        "notes": "stir-fry"
+        "notes": "Tofu stir-fry"
       },
       {
         "item": "Salmon fillet",
-        "quantity": "1.5 lbs",
+        "quantity": "1 lb fresh",
         "category": "Protein",
-        "notes": "roasted salmon"
+        "notes": "Salmon salad (Wed)"
       },
       {
-        "item": "Eggs",
-        "quantity": "1 dozen",
+        "item": "Extra-firm tofu",
+        "quantity": "14 oz block",
         "category": "Protein",
-        "notes": "sabich"
-      },
-      {
-        "item": "Red lentils",
-        "quantity": "1.5 cups (or 1 bag)",
-        "category": "Pantry",
-        "notes": "lentil soup"
-      },
-      {
-        "item": "Black beans",
-        "quantity": "2 cans",
-        "category": "Pantry",
-        "notes": "chili"
-      },
-      {
-        "item": "Kidney beans",
-        "quantity": "2 cans",
-        "category": "Pantry",
-        "notes": "chili"
-      },
-      {
-        "item": "Crushed tomatoes",
-        "quantity": "1 can",
-        "category": "Pantry",
-        "notes": "chili"
-      },
-      {
-        "item": "Diced tomatoes",
-        "quantity": "1 can",
-        "category": "Pantry",
-        "notes": "chili"
-      },
-      {
-        "item": "Tomato paste",
-        "quantity": "1 small can",
-        "category": "Pantry",
-        "notes": "lentil soup"
+        "notes": "Tofu stir-fry (Thu)"
       },
       {
         "item": "Vegetable broth",
-        "quantity": "4 cups (or 1 box)",
+        "quantity": "32 oz carton",
         "category": "Pantry",
-        "notes": "lentil soup"
+        "notes": "Lentil soup"
       },
       {
-        "item": "Tahini",
-        "quantity": "1 jar",
-        "category": "Pantry",
-        "notes": "sabich, salmon salad"
-      },
-      {
-        "item": "Feta cheese",
-        "quantity": "1 container",
-        "category": "Dairy",
-        "notes": "salmon salad"
-      },
-      {
-        "item": "Nuts or seeds for salad",
-        "quantity": "1 bag",
-        "category": "Pantry",
-        "notes": "salmon salad - toasted walnuts or sunflower seeds"
-      },
-      {
-        "item": "Bread",
+        "item": "Bread (crusty)",
         "quantity": "1 loaf",
         "category": "Bakery",
-        "notes": "lentil soup"
+        "notes": "Lentil soup"
       },
       {
-        "item": "Dijon mustard",
-        "quantity": "1 jar",
+        "item": "Ground cumin",
+        "quantity": "small container",
+        "category": "Spices",
+        "notes": "If needed - lentil soup"
+      },
+      {
+        "item": "Soy sauce",
+        "quantity": "10 oz bottle",
         "category": "Pantry",
-        "notes": "salad dressing"
+        "notes": "If needed - stir-fry"
+      },
+      {
+        "item": "Rice",
+        "quantity": "2 lb bag",
+        "category": "Pantry",
+        "notes": "If needed - have plenty per pantry"
+      },
+      {
+        "item": "Olive oil",
+        "quantity": "",
+        "category": "Pantry",
+        "notes": "If needed - cooking"
+      },
+      {
+        "item": "Baby puffs",
+        "quantity": "1 container",
+        "category": "Baby",
+        "notes": "For Ami - if running low"
       }
     ],
     "freshDirectOnly": [],
