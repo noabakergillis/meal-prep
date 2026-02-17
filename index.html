@@ -176,16 +176,16 @@
             <h2>⏱️ Veena Hours</h2>
             <div class="hours-tally">
                 <div class="tally-box">
-                    <div class="tally-number">40.5<span class="tally-unit">h</span></div>
-                    <div class="tally-label">This Week<br><span style="font-size:0.85em;">(Feb 9-15)</span></div>
+                    <div class="tally-number"><span id="thisWeekHours">0</span><span class="tally-unit">h</span></div>
+                    <div class="tally-label">This Week<br><span style="font-size:0.85em;" id="thisWeekRange"></span></div>
                 </div>
                 <div class="tally-box">
-                    <div class="tally-number">35.5<span class="tally-unit">h</span></div>
-                    <div class="tally-label">Next Week<br><span style="font-size:0.85em;">(Feb 16-22)</span></div>
+                    <div class="tally-number"><span id="nextWeekHours">0</span><span class="tally-unit">h</span></div>
+                    <div class="tally-label">Next Week<br><span style="font-size:0.85em;" id="nextWeekRange"></span></div>
                 </div>
                 <div class="tally-box green">
-                    <div class="tally-number">160<span class="tally-unit">h</span></div>
-                    <div class="tally-label">4 Week Total<br><span style="font-size:0.85em;">(Feb 9-Mar 8)</span></div>
+                    <div class="tally-number"><span id="totalHours">0</span><span class="tally-unit">h</span></div>
+                    <div class="tally-label">Total Shown<br><span style="font-size:0.85em;" id="totalRange"></span></div>
                 </div>
             </div>
         </div>
@@ -193,152 +193,10 @@
         <!-- Nanny Schedule - Next 10 Days -->
         <div class="card">
             <h2>👶 Nanny Schedule <span class="status live">Next 10 Days</span></h2>
-            <div class="scroll-list">
-                <div class="schedule-item today">
-                    <span class="schedule-day">Mon, 2/9</span>
-                    <span class="schedule-hours">10:00 AM – 6:30 PM</span>
-                    <span class="schedule-total">8.5h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Tue, 2/10</span>
-                    <span class="schedule-hours">8:30 AM – 6:00 PM</span>
-                    <span class="schedule-total">9.5h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Wed, 2/11</span>
-                    <span class="schedule-hours">9:30 AM – 8:30 PM</span>
-                    <span class="schedule-total">11h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Thu, 2/12</span>
-                    <span class="schedule-hours">9:30 AM – 7:30 PM</span>
-                    <span class="schedule-total">10h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Fri, 2/13</span>
-                    <span class="schedule-hours">11:00 AM – 2:00 PM</span>
-                    <span class="schedule-total">3h</span>
-                </div>
-                <div class="schedule-item off">
-                    <span class="schedule-day">Sat, 2/14</span>
-                    <span class="schedule-hours off">Off</span>
-                    <span class="schedule-total zero">0h</span>
-                </div>
-                <div class="schedule-item off">
-                    <span class="schedule-day">Sun, 2/15</span>
-                    <span class="schedule-hours off">Off</span>
-                    <span class="schedule-total zero">0h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Mon, 2/16</span>
-                    <span class="schedule-hours">10:00 AM – 6:00 PM</span>
-                    <span class="schedule-total">8h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Tue, 2/17</span>
-                    <span class="schedule-hours">9:30 AM – 6:30 PM</span>
-                    <span class="schedule-total">9h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Wed, 2/18</span>
-                    <span class="schedule-hours">9:30 AM – 6:30 PM</span>
-                    <span class="schedule-total">9h</span>
-                </div>
-            </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Tue, 2/10</span>
-                    <span class="schedule-hours">9:30 AM – 6:00 PM</span>
-                    <span class="schedule-total">8.5h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Wed, 2/11</span>
-                    <span class="schedule-hours">9:30 AM – 8:30 PM</span>
-                    <span class="schedule-total">11h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Thu, 2/12</span>
-                    <span class="schedule-hours">9:30 AM – 7:30 PM</span>
-                    <span class="schedule-total">10h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Fri, 2/13</span>
-                    <span class="schedule-hours">11:00 AM – 2:00 PM</span>
-                    <span class="schedule-total">3h</span>
-                </div>
-                <div class="schedule-item off">
-                    <span class="schedule-day">Sat, 2/14</span>
-                    <span class="schedule-hours off">Off</span>
-                    <span class="schedule-total zero">0h</span>
-                </div>
-                <div class="schedule-item off">
-                    <span class="schedule-day">Sun, 2/15</span>
-                    <span class="schedule-hours off">Off</span>
-                    <span class="schedule-total zero">0h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Mon, 2/16</span>
-                    <span class="schedule-hours">10:00 AM – 6:00 PM</span>
-                    <span class="schedule-total">8h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Tue, 2/17</span>
-                    <span class="schedule-hours">9:30 AM – 6:30 PM</span>
-                    <span class="schedule-total">9h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Wed, 2/18</span>
-                    <span class="schedule-hours">9:30 AM – 6:30 PM</span>
-                    <span class="schedule-total">9h</span>
-                </div>
-            </div>
-                <div class="schedule-item off">
-                    <span class="schedule-day">Sun, 2/8</span>
-                    <span class="schedule-hours off">Off</span>
-                    <span class="schedule-total zero">0h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Mon, 2/9</span>
-                    <span class="schedule-hours">10:00 AM – 6:00 PM</span>
-                    <span class="schedule-total">8h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Tue, 2/10</span>
-                    <span class="schedule-hours">9:30 AM – 6:00 PM</span>
-                    <span class="schedule-total">8.5h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Wed, 2/11</span>
-                    <span class="schedule-hours">9:30 AM – 8:30 PM</span>
-                    <span class="schedule-total">11h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Thu, 2/12</span>
-                    <span class="schedule-hours">9:30 AM – 7:30 PM</span>
-                    <span class="schedule-total">10h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Fri, 2/13</span>
-                    <span class="schedule-hours">11:00 AM – 2:00 PM</span>
-                    <span class="schedule-total">3h</span>
-                </div>
-                <div class="schedule-item off">
-                    <span class="schedule-day">Sat, 2/14</span>
-                    <span class="schedule-hours off">Off</span>
-                    <span class="schedule-total zero">0h</span>
-                </div>
-                <div class="schedule-item off">
-                    <span class="schedule-day">Sun, 2/15</span>
-                    <span class="schedule-hours off">Off</span>
-                    <span class="schedule-total zero">0h</span>
-                </div>
-                <div class="schedule-item">
-                    <span class="schedule-day">Mon, 2/16</span>
-                    <span class="schedule-hours">10:00 AM – 6:00 PM</span>
-                    <span class="schedule-total">8h</span>
-                </div>
+            <div class="scroll-list" id="scheduleList">
+                <!-- Will be populated by JavaScript -->
             </div>
         </div>
-        
         
         <!-- Meal Plan -->
         <div class="card">
@@ -416,7 +274,109 @@
             <p style="font-size:0.8em;color:#666;margin-top:12px;">📍 139 N 10th St, 4B • Williamsburg</p>
         </div>
 
-        <p class="updated">Updated: Feb 16, 2026 • Fammy 👨‍👩‍👧‍👦</p>
+        <p class="updated">Updated: <span id="updateTime"></span> • Fammy 👨‍👩‍👧‍👦</p>
     </div>
+
+    <script>
+        // Schedule data with actual hours
+        const schedule = [
+            { date: '2026-02-09', day: 'Mon, 2/9', start: '10:00 AM', end: '6:30 PM', hours: 8.5 },
+            { date: '2026-02-10', day: 'Tue, 2/10', start: '8:30 AM', end: '6:00 PM', hours: 9.5 },
+            { date: '2026-02-11', day: 'Wed, 2/11', start: '9:30 AM', end: '8:30 PM', hours: 11 },
+            { date: '2026-02-12', day: 'Thu, 2/12', start: '9:30 AM', end: '7:30 PM', hours: 10 },
+            { date: '2026-02-13', day: 'Fri, 2/13', start: '11:00 AM', end: '2:00 PM', hours: 3 },
+            { date: '2026-02-14', day: 'Sat, 2/14', start: null, end: null, hours: 0 },
+            { date: '2026-02-15', day: 'Sun, 2/15', start: null, end: null, hours: 0 },
+            { date: '2026-02-16', day: 'Mon, 2/16', start: '10:00 AM', end: '6:00 PM', hours: 8 },
+            { date: '2026-02-17', day: 'Tue, 2/17', start: '9:30 AM', end: '6:30 PM', hours: 9 },
+            { date: '2026-02-18', day: 'Wed, 2/18', start: '9:30 AM', end: '6:30 PM', hours: 9 }
+        ];
+
+        function renderSchedule() {
+            const scheduleList = document.getElementById('scheduleList');
+            const today = new Date('2026-02-17'); // Current date
+            
+            scheduleList.innerHTML = schedule.map(item => {
+                const itemDate = new Date(item.date);
+                const isToday = itemDate.toDateString() === today.toDateString();
+                const isOff = item.hours === 0;
+                
+                return `
+                    <div class="schedule-item ${isToday ? 'today' : ''} ${isOff ? 'off' : ''}">
+                        <span class="schedule-day">${item.day}</span>
+                        <span class="schedule-hours ${isOff ? 'off' : ''}">
+                            ${isOff ? 'Off' : `${item.start} – ${item.end}`}
+                        </span>
+                        <span class="schedule-total ${isOff ? 'zero' : ''}">${item.hours}h</span>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function calculateHours() {
+            const today = new Date('2026-02-17');
+            
+            // Get current week (Sun-Sat)
+            const currentWeekStart = new Date(today);
+            currentWeekStart.setDate(today.getDate() - today.getDay()); // Go to Sunday
+            const currentWeekEnd = new Date(currentWeekStart);
+            currentWeekEnd.setDate(currentWeekStart.getDate() + 6); // Go to Saturday
+            
+            // Get next week
+            const nextWeekStart = new Date(currentWeekEnd);
+            nextWeekStart.setDate(currentWeekEnd.getDate() + 1);
+            const nextWeekEnd = new Date(nextWeekStart);
+            nextWeekEnd.setDate(nextWeekStart.getDate() + 6);
+            
+            let thisWeekHours = 0;
+            let nextWeekHours = 0;
+            let totalHours = 0;
+            
+            schedule.forEach(item => {
+                const itemDate = new Date(item.date);
+                totalHours += item.hours;
+                
+                if (itemDate >= currentWeekStart && itemDate <= currentWeekEnd) {
+                    thisWeekHours += item.hours;
+                } else if (itemDate >= nextWeekStart && itemDate <= nextWeekEnd) {
+                    nextWeekHours += item.hours;
+                }
+            });
+            
+            // Update display
+            document.getElementById('thisWeekHours').textContent = thisWeekHours;
+            document.getElementById('nextWeekHours').textContent = nextWeekHours;
+            document.getElementById('totalHours').textContent = totalHours;
+            
+            // Update date ranges
+            const formatDate = (d) => {
+                const month = d.getMonth() + 1;
+                const day = d.getDate();
+                return `${month}/${day}`;
+            };
+            
+            document.getElementById('thisWeekRange').textContent = 
+                `(${formatDate(currentWeekStart)}-${formatDate(currentWeekEnd)})`;
+            document.getElementById('nextWeekRange').textContent = 
+                `(${formatDate(nextWeekStart)}-${formatDate(nextWeekEnd)})`;
+            
+            const firstDate = new Date(schedule[0].date);
+            const lastDate = new Date(schedule[schedule.length - 1].date);
+            document.getElementById('totalRange').textContent = 
+                `(${formatDate(firstDate)}-${formatDate(lastDate)})`;
+        }
+
+        function updateTimestamp() {
+            const now = new Date();
+            const options = { month: 'short', day: 'numeric', year: 'numeric' };
+            document.getElementById('updateTime').textContent = 
+                now.toLocaleDateString('en-US', options);
+        }
+
+        // Initialize
+        renderSchedule();
+        calculateHours();
+        updateTimestamp();
+    </script>
 </body>
 </html>
