@@ -45,7 +45,6 @@
         .status.approved { background: #d4edda; color: #155724; }
         .status.live { background: #cce5ff; color: #004085; }
         
-        /* Hours tally */
         .hours-tally {
             display: flex;
             gap: 8px;
@@ -150,7 +149,6 @@
             margin: 4px;
             font-size: 0.9em;
         }
-        .empty { color: #999; font-style: italic; }
         .updated {
             text-align: center;
             color: rgba(255,255,255,0.8);
@@ -171,9 +169,8 @@
     <div class="container">
         <h1>🍽️ Gillis Family Meals</h1>
         
-        <!-- Hours Tally -->
         <div class="card">
-            <h2>⏱️ Veena Hours</h2>
+            <h2>⏱️ Veena Hours <span class="status live">Live from Calendar</span></h2>
             <div class="hours-tally">
                 <div class="tally-box">
                     <div class="tally-number"><span id="thisWeekHours">0</span><span class="tally-unit">h</span></div>
@@ -185,20 +182,16 @@
                 </div>
                 <div class="tally-box green">
                     <div class="tally-number"><span id="totalHours">0</span><span class="tally-unit">h</span></div>
-                    <div class="tally-label">Total Shown<br><span style="font-size:0.85em;" id="totalRange"></span></div>
+                    <div class="tally-label">Next 10 Days<br><span style="font-size:0.85em;" id="totalRange"></span></div>
                 </div>
             </div>
         </div>
         
-        <!-- Nanny Schedule - Next 10 Days -->
         <div class="card">
             <h2>👶 Nanny Schedule <span class="status live">Next 10 Days</span></h2>
-            <div class="scroll-list" id="scheduleList">
-                <!-- Will be populated by JavaScript -->
-            </div>
+            <div class="scroll-list" id="scheduleList"></div>
         </div>
         
-        <!-- Meal Plan -->
         <div class="card">
             <h2>🍽️ This Week's Menu <span class="status approved">Feb 17-19 (Tue-Thu)</span></h2>
             <div class="menu-item"><span class="day">Tuesday 2/17</span><span class="meal">Lentil soup with crusty bread</span></div>
@@ -208,25 +201,24 @@
 
         <div class="card">
             <h2>🛒 Grocery List</h2>
-            <p style="font-size:0.85em;color:#666;margin-bottom:12px;">📍 Week of Feb 17 (Tue-Thu) — <span class="status approved">Approved - Populating Carts</span></p>
-            <div class="grocery-item"><input type="checkbox"><span>Red lentils (1 lb bag) — lentil soup</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Yellow onions (3) — lentil soup, stir-fry</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Carrots (1 lb bag) — lentil soup</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Celery (1 bunch) — lentil soup</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Cherry tomatoes (1 pint) — salmon salad</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Cucumber (2) — salmon salad</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Mixed greens/Spring mix (5 oz) — salmon salad</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Bell peppers (2, red/yellow) — tofu stir-fry</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Snap peas (8 oz bag) — tofu stir-fry</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Lemons (2) — salmon salad dressing</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Fresh ginger (small piece) — tofu stir-fry</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Salmon fillet (1 lb fresh) — salmon salad</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Extra-firm tofu (14 oz block) — tofu stir-fry</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Vegetable broth (32 oz carton) — lentil soup</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Bread, crusty (1 loaf) — lentil soup</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Ground cumin (if needed) — lentil soup</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Soy sauce (if needed) — stir-fry</span></div>
-            <div class="grocery-item"><input type="checkbox"><span>Baby puffs (if running low) — for Ami</span></div>
+            <p style="font-size:0.85em;color:#666;margin-bottom:12px;">📍 Week of Feb 17 (Tue-Thu) — <span class="status approved">Completed ✅</span></p>
+            <div class="grocery-item"><input type="checkbox" checked><span>Red lentils (1 lb bag) — lentil soup</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Yellow onions (3) — lentil soup, stir-fry</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Carrots (1 lb bag) — lentil soup</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Celery (1 bunch) — lentil soup</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Cherry tomatoes (1 pint) — salmon salad</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Cucumber (2) — salmon salad</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Mixed greens/Spring mix (5 oz) — salmon salad</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Bell peppers (2, red/yellow) — tofu stir-fry</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Snap peas (8 oz bag) — tofu stir-fry</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Lemons (2) — salmon salad dressing</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Fresh ginger (small piece) — tofu stir-fry</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Salmon fillet (1 lb fresh) — salmon salad</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Extra-firm tofu (14 oz block) — tofu stir-fry</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Vegetable broth (32 oz carton) — lentil soup</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Bread, crusty (1 loaf) — lentil soup</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Ground cumin (if needed) — lentil soup</span></div>
+            <div class="grocery-item"><input type="checkbox" checked><span>Soy sauce (if needed) — stir-fry</span></div>
         </div>
 
         <div class="card">
@@ -274,53 +266,97 @@
             <p style="font-size:0.8em;color:#666;margin-top:12px;">📍 139 N 10th St, 4B • Williamsburg</p>
         </div>
 
-        <p class="updated">Updated: <span id="updateTime"></span> • Fammy 👨‍👩‍👧‍👦</p>
+        <p class="updated">Updated: Feb 17, 2026 • Fammy 👨‍👩‍👧‍👦</p>
     </div>
 
     <script>
-        // Schedule data with actual hours
         const schedule = [
-            { date: '2026-02-09', day: 'Mon, 2/9', start: '10:00 AM', end: '6:30 PM', hours: 8.5 },
-            { date: '2026-02-10', day: 'Tue, 2/10', start: '8:30 AM', end: '6:00 PM', hours: 9.5 },
-            { date: '2026-02-11', day: 'Wed, 2/11', start: '9:30 AM', end: '8:30 PM', hours: 11 },
-            { date: '2026-02-12', day: 'Thu, 2/12', start: '9:30 AM', end: '7:30 PM', hours: 10 },
-            { date: '2026-02-13', day: 'Fri, 2/13', start: '11:00 AM', end: '2:00 PM', hours: 3 },
-            { date: '2026-02-14', day: 'Sat, 2/14', start: null, end: null, hours: 0 },
-            { date: '2026-02-15', day: 'Sun, 2/15', start: null, end: null, hours: 0 },
-            { date: '2026-02-16', day: 'Mon, 2/16', start: '10:00 AM', end: '6:00 PM', hours: 8 },
-            { date: '2026-02-17', day: 'Tue, 2/17', start: '9:30 AM', end: '6:30 PM', hours: 9 },
-            { date: '2026-02-18', day: 'Wed, 2/18', start: '9:30 AM', end: '6:30 PM', hours: 9 }
-        ];
+            {
+                        "date": "2026-02-17",
+                        "day": "Tue, 2/17",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-18",
+                        "day": "Wed, 2/18",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-19",
+                        "day": "Thu, 2/19",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-20",
+                        "day": "Fri, 2/20",
+                        "start": "1:00 PM",
+                        "end": "6:00 PM",
+                        "hours": 5.0
+            },
+            {
+                        "date": "2026-02-23",
+                        "day": "Mon, 2/23",
+                        "start": "10:00 AM",
+                        "end": "6:00 PM",
+                        "hours": 8.0
+            },
+            {
+                        "date": "2026-02-24",
+                        "day": "Tue, 2/24",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-25",
+                        "day": "Wed, 2/25",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-26",
+                        "day": "Thu, 2/26",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            }
+];
 
         function renderSchedule() {
             const scheduleList = document.getElementById('scheduleList');
-            const today = new Date('2026-02-17'); // Current date
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
             
             scheduleList.innerHTML = schedule.map(item => {
-                const itemDate = new Date(item.date);
-                const isToday = itemDate.toDateString() === today.toDateString();
-                const isOff = item.hours === 0;
+                const itemDate = new Date(item.date + 'T00:00:00');
+                const isToday = itemDate.getTime() === today.getTime();
                 
                 return `
-                    <div class="schedule-item ${isToday ? 'today' : ''} ${isOff ? 'off' : ''}">
+                    <div class="schedule-item ${isToday ? 'today' : ''}">
                         <span class="schedule-day">${item.day}</span>
-                        <span class="schedule-hours ${isOff ? 'off' : ''}">
-                            ${isOff ? 'Off' : `${item.start} – ${item.end}`}
-                        </span>
-                        <span class="schedule-total ${isOff ? 'zero' : ''}">${item.hours}h</span>
+                        <span class="schedule-hours">${item.start} – ${item.end}</span>
+                        <span class="schedule-total">${item.hours}h</span>
                     </div>
                 `;
             }).join('');
         }
 
         function calculateHours() {
-            const today = new Date('2026-02-17');
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
             
             // Get current week (Sun-Sat)
             const currentWeekStart = new Date(today);
-            currentWeekStart.setDate(today.getDate() - today.getDay()); // Go to Sunday
+            currentWeekStart.setDate(today.getDate() - today.getDay());
             const currentWeekEnd = new Date(currentWeekStart);
-            currentWeekEnd.setDate(currentWeekStart.getDate() + 6); // Go to Saturday
+            currentWeekEnd.setDate(currentWeekStart.getDate() + 6);
             
             // Get next week
             const nextWeekStart = new Date(currentWeekEnd);
@@ -333,7 +369,7 @@
             let totalHours = 0;
             
             schedule.forEach(item => {
-                const itemDate = new Date(item.date);
+                const itemDate = new Date(item.date + 'T00:00:00');
                 totalHours += item.hours;
                 
                 if (itemDate >= currentWeekStart && itemDate <= currentWeekEnd) {
@@ -343,12 +379,10 @@
                 }
             });
             
-            // Update display
             document.getElementById('thisWeekHours').textContent = thisWeekHours;
             document.getElementById('nextWeekHours').textContent = nextWeekHours;
             document.getElementById('totalHours').textContent = totalHours;
             
-            // Update date ranges
             const formatDate = (d) => {
                 const month = d.getMonth() + 1;
                 const day = d.getDate();
@@ -360,23 +394,16 @@
             document.getElementById('nextWeekRange').textContent = 
                 `(${formatDate(nextWeekStart)}-${formatDate(nextWeekEnd)})`;
             
-            const firstDate = new Date(schedule[0].date);
-            const lastDate = new Date(schedule[schedule.length - 1].date);
-            document.getElementById('totalRange').textContent = 
-                `(${formatDate(firstDate)}-${formatDate(lastDate)})`;
+            if (schedule.length > 0) {
+                const firstDate = new Date(schedule[0].date + 'T00:00:00');
+                const lastDate = new Date(schedule[schedule.length - 1].date + 'T00:00:00');
+                document.getElementById('totalRange').textContent = 
+                    `(${formatDate(firstDate)}-${formatDate(lastDate)})`;
+            }
         }
 
-        function updateTimestamp() {
-            const now = new Date();
-            const options = { month: 'short', day: 'numeric', year: 'numeric' };
-            document.getElementById('updateTime').textContent = 
-                now.toLocaleDateString('en-US', options);
-        }
-
-        // Initialize
         renderSchedule();
         calculateHours();
-        updateTimestamp();
     </script>
 </body>
 </html>
