@@ -182,13 +182,13 @@
                 </div>
                 <div class="tally-box green">
                     <div class="tally-number"><span id="totalHours">0</span><span class="tally-unit">h</span></div>
-                    <div class="tally-label">Next 10 Days<br><span style="font-size:0.85em;" id="totalRange"></span></div>
+                    <div class="tally-label">Next 14 Days<br><span style="font-size:0.85em;" id="totalRange"></span></div>
                 </div>
             </div>
         </div>
         
         <div class="card">
-            <h2>👶 Nanny Schedule <span class="status live">Next 10 Days</span></h2>
+            <h2>👶 Nanny Schedule <span class="status live">Next 14 Days</span></h2>
             <div class="scroll-list" id="scheduleList"></div>
         </div>
         
@@ -270,7 +270,7 @@
     </div>
 
     <script>
-        // Display schedule (next 10 days)
+        // Display schedule (next 14 days)
         const schedule = [
             {
                         "date": "2026-02-17",
@@ -432,7 +432,7 @@
                 }
             });
             
-            // Total from displayed schedule (next 10 days)
+            // Total from displayed schedule (next 14 days)
             schedule.forEach(item => {
                 totalHours += item.hours;
             });
