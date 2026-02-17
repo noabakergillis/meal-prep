@@ -456,7 +456,12 @@
             let nextWeekHours = 0;
             let totalHours = 0;
             
-            // Calculate from ALL events (includes past days in current week)
+            // Calculate next 14 days cutoff
+            const fourteenDaysOut = new Date(today);
+            fourteenDaysOut.setDate(today.getDate() + 14);
+            fourteenDaysOut.setHours(23, 59, 59, 999);
+            
+            // Calculate from ALL events from calendar
             allEvents.forEach(item => {
                 const itemDate = new Date(item.date + 'T00:00:00');
                 
@@ -465,11 +470,11 @@
                 } else if (itemDate >= nextWeekStart && itemDate <= nextWeekEnd) {
                     nextWeekHours += item.hours;
                 }
-            });
-            
-            // Total from displayed schedule (next 14 days)
-            schedule.forEach(item => {
-                totalHours += item.hours;
+                
+                // Total: all events within next 14 days from today
+                if (itemDate >= today && itemDate <= fourteenDaysOut) {
+                    totalHours += item.hours;
+                }
             });
             
             document.getElementById('thisWeekHours').textContent = thisWeekHours;
