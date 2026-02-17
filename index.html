@@ -270,7 +270,81 @@
     </div>
 
     <script>
+        // Display schedule (next 10 days)
         const schedule = [
+            {
+                        "date": "2026-02-17",
+                        "day": "Tue, 2/17",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-18",
+                        "day": "Wed, 2/18",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-19",
+                        "day": "Thu, 2/19",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-20",
+                        "day": "Fri, 2/20",
+                        "start": "9:30 AM",
+                        "end": "3:30 PM",
+                        "hours": 6.0
+            },
+            {
+                        "date": "2026-02-23",
+                        "day": "Mon, 2/23",
+                        "start": "10:00 AM",
+                        "end": "6:00 PM",
+                        "hours": 8.0
+            },
+            {
+                        "date": "2026-02-24",
+                        "day": "Tue, 2/24",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-25",
+                        "day": "Wed, 2/25",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-26",
+                        "day": "Thu, 2/26",
+                        "start": "9:30 AM",
+                        "end": "6:30 PM",
+                        "hours": 9.0
+            },
+            {
+                        "date": "2026-02-27",
+                        "day": "Fri, 2/27",
+                        "start": "1:00 PM",
+                        "end": "6:00 PM",
+                        "hours": 5.0
+            },
+            {
+                        "date": "2026-03-02",
+                        "day": "Mon, 3/2",
+                        "start": "10:00 AM",
+                        "end": "6:00 PM",
+                        "hours": 8.0
+            }
+];
+        // All events (for week calculations)
+        const allEvents = [
             {
                         "date": "2026-02-17",
                         "day": "Tue, 2/17",
@@ -382,15 +456,20 @@
             let nextWeekHours = 0;
             let totalHours = 0;
             
-            schedule.forEach(item => {
+            // Calculate from ALL events (includes past days in current week)
+            allEvents.forEach(item => {
                 const itemDate = new Date(item.date + 'T00:00:00');
-                totalHours += item.hours;
                 
                 if (itemDate >= currentWeekStart && itemDate <= currentWeekEnd) {
                     thisWeekHours += item.hours;
                 } else if (itemDate >= nextWeekStart && itemDate <= nextWeekEnd) {
                     nextWeekHours += item.hours;
                 }
+            });
+            
+            // Total from displayed schedule (next 10 days)
+            schedule.forEach(item => {
+                totalHours += item.hours;
             });
             
             document.getElementById('thisWeekHours').textContent = thisWeekHours;
