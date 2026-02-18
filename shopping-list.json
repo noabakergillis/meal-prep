@@ -128,6 +128,12 @@
         "quantity": "1 container",
         "category": "Pantry",
         "notes": "Breakfast"
+      },
+      {
+        "item": "Avocados",
+        "quantity": "3-4",
+        "category": "Produce",
+        "notes": ""
       }
     ],
     "freshDirectOnly": [],
