@@ -1,8 +1,21 @@
 {
   "lastUpdated": "2026-02-18",
-  "deliveryDate": "Ordered - Feb 18",
+  "deliveryDate": "Pending",
   "stores": {
-    "any": [],
+    "any": [
+      {
+        "item": "Old fashioned oats",
+        "quantity": "1 container",
+        "category": "Pantry",
+        "notes": "Breakfast"
+      },
+      {
+        "item": "Avocados",
+        "quantity": "3-4",
+        "category": "Produce",
+        "notes": ""
+      }
+    ],
     "freshDirectOnly": [],
     "instacartOnly": [],
     "costcoOnly": []
