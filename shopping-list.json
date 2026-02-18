@@ -14,6 +14,12 @@
         "quantity": "3-4",
         "category": "Produce",
         "notes": ""
+      },
+      {
+        "item": "Siggi's whole milk yogurt",
+        "quantity": "1-2 containers",
+        "category": "Dairy",
+        "notes": ""
       }
     ],
     "freshDirectOnly": [],
