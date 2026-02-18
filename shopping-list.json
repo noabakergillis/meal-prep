@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-02-16",
+  "lastUpdated": "2026-02-17",
   "deliveryDate": "Week of Feb 17 (Tue-Thu)",
   "stores": {
     "any": [
@@ -122,6 +122,12 @@
         "quantity": "1 container",
         "category": "Baby",
         "notes": "For Ami - if running low"
+      },
+      {
+        "item": "Old fashioned oats",
+        "quantity": "1 container",
+        "category": "Pantry",
+        "notes": "Breakfast"
       }
     ],
     "freshDirectOnly": [],
